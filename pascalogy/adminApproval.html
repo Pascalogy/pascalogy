@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Approval</title>
+    <link rel="stylesheet" href="adminApproval.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="adminApproval.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="Pascalogy__4_-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="dashboard.html" class="active">Patient List</a></li>
+                <li><a href="adminList.html" class="active">Admin List</a></li>
+                <li><a href="adminApproval.html" class="active">Admin Approval</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="adminList"></div>
+        <h1>Admin Approval</h1>
+        <table class="admin-list">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th class="admin-name">Name</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="pending-accounts">
+                <!-- Pending accounts will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
+
+
+

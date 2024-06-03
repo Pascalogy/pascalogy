@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    
+    <img src="Pascalogy__4_-removebg-preview.png" alt="Pascalogy Logo" class="logo">
+    <p>This section is for clinician and staff registeration.</p>
+    <p>Please sign up through mobile app for patient. </p>
+    <form id="signup-form">
+      <input type="text" name="Name" placeholder="Full Name" required>
+      <input type="email" name="Email" placeholder="Email address" required>
+      <input type="text" name="Company" placeholder="Company" required>
+      <input type="password" name="Password" placeholder="Password" required>
+      <input type="password" name="Confirm-Password" placeholder="Confirm Password" required>
+      <!--<label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>-->
+      <button type="submit">Sign Up as Admin</button>
+    </form>
+  
+    <!--<p class="login-link">Already have an account? <a href="login.html">Login</a></p>-->
+  </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  <script src="adminSignUp.js"></script>
+  
+</body>
+</html>

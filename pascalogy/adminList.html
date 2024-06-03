@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin List</title>
+    <link rel="stylesheet" href="adminList.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <img src="Pascalogy__4_-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="dashboard.html" class="active">Patient List</a></li>
+                <li><a href="adminList.html" class="active">Admin List</a></li>
+                <li><a href="adminApproval.html" class="active">Admin Approval</a></li>
+                <li><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div id="adminList"></div>
+        <h1>Admin List</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search admin name..." onkeyup="searchAdmins()">
+            <button id="clear-search-btn" onclick="clearSearchInput()">
+                <span class="close-icon">x</span>
+            </button>
+            <button class="add-admin-button" id="addAdminBtn">
+                <i class="fas fa-plus"></i> Add New Admin
+            </button>
+          </div>
+        <table class="admin-list">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody id="admin-list"></tbody>
+        </table>
+    </div>
+</div>
+
+    <!-- Add Admin Modal -->
+    <div id="addAdminModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Add New Admin</h2>
+        <form id="signup-form">
+          <input type="text" name="Name" placeholder="Full Name" required>
+          <input type="email" name="Email" placeholder="Email address" required>
+          <input type="password" name="Password" placeholder="Password" required>
+          <input type="password" name="Confirm-Password" placeholder="Confirm Password" required>
+          <button type="submit">Add Admin</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+    <script src="adminList.js"></script>
+</body>
+</html>
+

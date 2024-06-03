@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Admin</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+      <img src="Pascalogy__4_-removebg-preview.png" class="logo">
+      <form id="signup-form">
+        <input type="text" name="Name" placeholder="Full Name" required>
+        <input type="email" name="Email" placeholder="Email address" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <input type="password" name="Confirm-Password" placeholder="Confirm Password" required>
+        <!--<label><input type="checkbox" name="terms" required> I agree to the Terms and Conditions</label>-->
+        <button type="submit">Add Admin</button>
+      </form>
+      <div class="add-buttons">
+        <a href="dashboard.html" class="back-button">
+          <i class="fas fa-sign-out-alt"></i> Back to Dashboard
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-firestore.js"></script>
+  <script src="addAdmin.js"></script>
+  
+</body>
+</html>

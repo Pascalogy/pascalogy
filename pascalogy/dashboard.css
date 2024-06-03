@@ -1,0 +1,130 @@
+.sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #f0f0f0;
+  padding-top: 20px;
+}
+
+.logo {
+width: auto;
+height: 100px;
+margin-bottom: 20px;
+margin-left: 50px;
+margin-top: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.sidebar li a:hover {
+  background-color: #ddd;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 20px;
+}
+
+.patient-data{
+  border-collapse: collapse;
+  margin: 20px;
+  font-size: 14px;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.patient-data thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.patient-data th,
+.patient-data td {
+  padding: 12px 15px;
+}
+
+.patient-data tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.patient-data tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.patient-data tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.sidebar li a img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 30px;
+}
+
+input[type="text"] {
+  width: 100%;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  display:flex;
+  align-items: baseline;
+  margin-bottom: 10px;
+  width: 300px;
+}
+#clear-search-btn {
+  position: absolute;
+  left: 130px;
+  top: 35%;
+  transform: translateY(-50%);
+  color: #000;
+  font-size: 20px; /* Font size */
+  cursor: pointer; /* Cursor style */
+  background-color: transparent; /* Background color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+#search-input:not(:placeholder-shown) + #clear-search-btn {
+  display: inline-block; /* Show the button when there is text in the input */
+}
+
+#clear-search-btn:hover {
+  color: red; /* Text color on hover */
+}

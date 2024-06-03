@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pascalogy</title>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <img src="Pascalogy__4_-removebg-preview.png" class="logo">
+      <ul>
+        <li><a href="dashboard.html" class="active">Patient List</a></li>
+        <li><a href="adminList.html" class="active">Admin List</a></li>
+        <li><a href="adminApproval.html" class="active">Admin Approval</a></li>
+        <!--<li><a href="addAdmin.html" class="active">Add Admin</a></li>-->
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <div id="patientData">
+        <h1>Patient List</h1>
+        <div class="search-container">
+          <input type="text" id="search-input" placeholder="Search patient name..." onkeyup="searchPatients()">
+            <button id="clear-search-btn" onclick="clearSearchInput()">
+                <span class="close-icon">x</span>
+            </button>
+        </div>
+        <table id="patient-table" class="patient-data">
+          <thead>
+            <tr>
+              <th>Patient Name</th>
+              <th>IC Number</th>
+              <th>Contact</th>
+              <th>Patient Data</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <script src="patientData.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

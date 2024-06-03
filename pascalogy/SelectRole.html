@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            height: 100vh; /* Take up full viewport height */
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .logo {
+            width: 150px;
+            height: 150px;
+            text-align: center;
+            margin-left: 135px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .btn {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn:hover {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="Pascalogy__4_-removebg-preview.png" alt="Pascalogy Logo" class="logo">
+        <h2>Select Your Role</h2>
+        <button class="btn" onclick="selectRole('clinician')">Admin (eg. Clinician / Doctor / Staff) </button>
+        <button class="btn" onclick="selectRole('public')"> User (eg. Patient / Guardian) </button>
+    </div>
+
+    <script>
+        function selectRole(role) {
+            // You can use role variable to perform further actions
+            console.log('Selected role:', role);
+            // For example, you can redirect to a different page based on the role selected
+            if (role === 'clinician') {
+                window.location.href = 'adminSignUp.html';
+            } else if (role === 'public') {
+                window.location.href = 'signup.html';
+            }
+        }
+    </script>
+</body>
+</html>

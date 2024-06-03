@@ -1,0 +1,166 @@
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Take up full viewport height */
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  p {
+    text-align: center;
+    font-size: 13px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+  
+  .logo {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin-left: 130px;
+    margin-bottom: 30px;
+
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  input[type="email"],
+  input[type="password"],
+  input[type="text"]
+ {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .forgot-password {
+    text-align: right;
+    margin-top: -10px;
+  }
+  
+  .signup-link,
+  .login-link {
+    text-align: center;
+  }
+  
+  .signup-link a,
+  .login-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover,
+  .login-link a:hover {
+    text-decoration: underline;
+  }
+
+  .sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.sidebar li a:hover {
+    background-color: #ddd;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.patient-data {
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 14px;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .patient-data thead tr {
+    background-color:#009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .patient-data th,
+  .patient-data td {
+    padding: 12px 15px;
+  }
+  
+  .patient-data tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .patient-data tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .patient-data tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .add-buttons {
+    margin-top: 30px;
+    text-align: center;
+}
+.back-button {
+    background-color: #ccc;
+    color: #333;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    
+}

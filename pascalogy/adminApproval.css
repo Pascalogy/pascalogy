@@ -1,0 +1,99 @@
+.sidebar {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f0f0f0;
+    padding-top: 20px;
+  }
+  
+  .logo {
+  width: auto;
+  height: 100px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-top: 10px;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  .sidebar li a:hover {
+    background-color: #ddd;
+  }
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+  }
+  
+  .admin-list{
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 14px;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .admin-list thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+  }
+  
+  .admin-list th,
+  .admin-list td {
+    padding: 12px 15px;
+  }
+  
+  .admin-list tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .admin-list tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .admin-list tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  .sidebar li a img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+}
+
+.approve-button, .decline-button {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.decline-button {
+    background-color: #f44336;
+    margin-left: 5px;
+}
+
+
